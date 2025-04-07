@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-k01">
+        <li class="text">K01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-k01a">
+        <li class="text">K01A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-k01b">
+        <li class="text">K01B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-toalett-k01b">
+        <li class="text">Toalett K01B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-vask-k01">
+        <li class="text">Vask K01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-vask-k01a">
+        <li class="text">Vask K01A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-vask-k01b">
+        <li class="text">Vask K01B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-k15_inngang">
+        <li class="text">K15_inngang</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-k20_korridor">
+        <li class="text">K20_korridor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-ved-heis">
+        <li class="text">Ved heis</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-k15">
+        <li class="text">K15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-k15a">
+        <li class="text">k15A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-k15b">
+        <li class="text">k15B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-toalett-k15a">
+        <li class="text">Toalett k15A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-vasker-k15">
+        <li class="text">Vasker k15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-vasker-k15a">
+        <li class="text">Vasker k15A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-vasker-k15b">
+        <li class="text">Vasker k15B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-gang_k15_til_k14">
+        <li class="text">Gang_k15_til_k14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-k14">
+        <li class="text">K14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-k14_vask">
+        <li class="text">K14_vask</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-k14_a">
+        <li class="text">K14_A</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-k14_a_toalett">
+        <li class="text">K14_A_toalett</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-k14_a_vask">
+        <li class="text">K14_A_vask</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-k14_b">
+        <li class="text">K14_B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-k14_b_dusj">
+        <li class="text">K14_B_dusj</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-k14_b_vask">
+        <li class="text">K14_B_Vask</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
